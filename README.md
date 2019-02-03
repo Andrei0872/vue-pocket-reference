@@ -14,3 +14,4 @@ For a better learning experience, at least this goes for myself, I decided to sp
 * [Tips](https://github.com/Andrei0872/vue-pocket-reference/tree/tips)
     * [Scoped Slots](https://github.com/Andrei0872/vue-pocket-reference/tree/tips/src/components/Scoped%20Slots)
     * [v-model on Components](https://github.com/Andrei0872/vue-pocket-reference/tree/tips/src/components/v-model)
+* [Routing](https://github.com/Andrei0872/vue-pocket-reference/tree/routing)
