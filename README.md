@@ -11,3 +11,6 @@ For a better learning experience, at least this goes for myself, I decided to sp
     * [Transitions on Funcitonal Components](https://github.com/Andrei0872/vue-pocket-reference/tree/transitions/src/components/Functional%20Components)
     * [Basics of Transitions](https://github.com/Andrei0872/vue-pocket-reference/tree/transitions/src/components/Basic%20Tranisitons)
     * [From Docs](https://github.com/Andrei0872/vue-pocket-reference/tree/transitions/src/components/From%20Docs)
+* [Tips](https://github.com/Andrei0872/vue-pocket-reference/tree/tips)
+    * [Scoped Slots](https://github.com/Andrei0872/vue-pocket-reference/tree/tips/src/components/Scoped%20Slots)
+    * [v-model on Components](https://github.com/Andrei0872/vue-pocket-reference/tree/tips/src/components/v-model)
