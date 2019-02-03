@@ -1,17 +1,17 @@
 <template>
   <div class="home">
     <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <ScopedSlots />
   </div>
 </template>
 
 <script>
-import HelloWorld from '@/components/HelloWorld.vue';
+import ScopedSlots from '@/components/Scoped Slots/Main';
 
 export default {
   name: 'home',
   components: {
-    HelloWorld,
+    ScopedSlots,
   },
 };
 </script>
