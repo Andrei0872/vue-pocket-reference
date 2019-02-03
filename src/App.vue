@@ -1,13 +1,16 @@
 <template>
   <div id="app">
-    <Basics />
+    <!-- <Basics /> -->
+    <ParamsAsProps />
   </div>
 </template>
 
 <script>
 import Basics from './components/Basics';
+import ParamsAsProps from './components/ParamsAsProps';
+
 export default {
-  components: { Basics, }
+  components: { Basics, ParamsAsProps, }
 }
 </script>
 
