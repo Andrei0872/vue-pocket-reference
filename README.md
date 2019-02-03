@@ -7,3 +7,7 @@ For a better learning experience, at least this goes for myself, I decided to sp
 ## Branches
 
 * [Vuex Namespaced Modules](https://github.com/Andrei0872/vue-pocket-reference/tree/vuex-namespaced-modules)
+* [Transitions](https://github.com/Andrei0872/vue-pocket-reference/tree/transitions)
+    * [Transitions on Funcitonal Components](https://github.com/Andrei0872/vue-pocket-reference/tree/transitions/src/components/Functional%20Components)
+    * [Basics of Transitions](https://github.com/Andrei0872/vue-pocket-reference/tree/transitions/src/components/Basic%20Tranisitons)
+    * [From Docs](https://github.com/Andrei0872/vue-pocket-reference/tree/transitions/src/components/From%20Docs)
