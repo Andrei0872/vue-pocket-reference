@@ -1,12 +1,28 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+    <Mouse :renderFn="__render" />
   </div>
 </template>
+
+<script>
+import Mouse from './Mouse';
+
+export default {
+  components: { Mouse },
+  methods: {
+    __render ({ x, y, name }) {
+      return (
+        <div>
+          <h1>
+            Current Coords: ({ x }, { y })
+          </h1>
+          <h3>{ name }</h3>
+        </div>
+      )
+    }
+  }
+}
+</script>
 
 <style>
 #app {
