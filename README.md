@@ -16,4 +16,5 @@ For a better learning experience, at least this goes for myself, I decided to sp
     * [v-model on Components](https://github.com/Andrei0872/vue-pocket-reference/tree/tips/src/components/v-model)
     * [Renderless Components](https://github.com/Andrei0872/vue-pocket-reference/tree/tips/src/components/Renderless%20Components)
     * [Dynamic Title](https://github.com/Andrei0872/vue-pocket-reference/tree/dynamic-title)
+    * [JSX by Using Render Prop](https://github.com/Andrei0872/vue-pocket-reference/tree/render-props)
 * [Routing](https://github.com/Andrei0872/vue-pocket-reference/tree/routing)
