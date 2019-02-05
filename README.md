@@ -18,3 +18,4 @@ For a better learning experience, at least this goes for myself, I decided to sp
     * [Dynamic Title](https://github.com/Andrei0872/vue-pocket-reference/tree/dynamic-title)
     * [JSX by Using Render Prop](https://github.com/Andrei0872/vue-pocket-reference/tree/render-props)
 * [Routing](https://github.com/Andrei0872/vue-pocket-reference/tree/routing)
+* [Internationalization](https://github.com/Andrei0872/vue-pocket-reference/tree/i18n)
