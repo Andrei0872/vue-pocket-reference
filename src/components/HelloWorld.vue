@@ -10,6 +10,12 @@ export default {
   props: {
     msg: String,
   },
+  mounted () {
+    // The root DOM elem that the vue instance is managing
+    console.log(this.$el); // <div class="hello"></div>
+    // The root vue instance of the current component tree
+    console.log(this.$root); // <div id="app"></div>
+  }
 };
 </script>
 
