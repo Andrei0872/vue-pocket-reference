@@ -1,17 +1,22 @@
 <template>
   <div class="home">
     <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <FuncComponent @customEvent="showAlert($event)"/>
   </div>
 </template>
 
 <script>
-import HelloWorld from '@/components/HelloWorld.vue';
+import FuncComponent from '@/components/FuncComponent.vue';
 
 export default {
   name: 'home',
   components: {
-    HelloWorld,
+    FuncComponent,
   },
+  methods: {
+    showAlert (param) {
+      alert(`you clicked me! param: ${param}`);
+    }
+  }
 };
 </script>
