@@ -20,3 +20,4 @@ For a better learning experience, at least this goes for myself, I decided to sp
 * [Routing](https://github.com/Andrei0872/vue-pocket-reference/tree/routing)
 * [Internationalization](https://github.com/Andrei0872/vue-pocket-reference/tree/i18n)
 * [Functional Components](https://github.com/Andrei0872/vue-pocket-reference/tree/functional-components)
+* [Abstract Components](https://github.com/Andrei0872/vue-pocket-reference/tree/abstract-components)
