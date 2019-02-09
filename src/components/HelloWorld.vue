@@ -6,6 +6,8 @@
 
     <!-- This would simply work as the event is attached to the root component -->
     <ClickNativeExample @click.native="clickFn" />
+
+    <button :class="[$style.button]">Simple button</button>
   </div>
 </template>
 
@@ -34,20 +36,10 @@ export default {
 };
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-h3 {
-  margin: 40px 0 0;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
+<!-- Using CSS Modules -->
+<style module>
+
+.button {
+  background-color: lightblue;
 }
 </style>
