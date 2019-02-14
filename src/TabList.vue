@@ -17,14 +17,10 @@
             </ul>
             
             <div class="tab_container__content">
-                <p
-                    v-for="tabName in tabNames"
-                    :key="tabName"
-                >
+                <p>
                     <slot 
-                        :name="tabName"
-                        v-if="currentTab === tabName"
-                        :tabUpper="`This is the ${tabName} tab`"
+                        :name="currentTab"
+                        :tabUpper="`This is the ${currentTab} tab`"
                     ></slot>
                 </p>
             </div>
@@ -35,12 +31,16 @@
 
 <script>
 export default {
-    props: {
-        currentTab: String
-    },
     data: () => ({
-        tabNames: ['home', 'about', 'contact']
+        currentTab: 'home',
+        tabs: ''
     }),
+    props: {
+        tabNames: Array
+    },
+    mounted () {
+        this.tabs = this.tabNames
+    }
 }
 </script>
 

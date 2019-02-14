@@ -22,10 +22,12 @@
 
     <button v-if="newFeatures" @click="customSlot = customSlot === 'name' ? 'testSlot' : 'name'">Change Slot Name!</button>
 
+    <!-- =========================================== -->
+
     <!-- Modify the value of `tabList` in order to visualize this example -->
     <!-- The content should remain in the template -->
     <!-- The script should contain the logic -->
-    <TabList v-if="tabList" :currentTab="selectedTab">
+    <TabList v-if="tabList" :tabNames="tabNames">
 
       <template v-slot:home="{ tabUpper }">
         <h3>Home</h3>
@@ -65,7 +67,7 @@ export default {
     customSlot: 'name',
     newFeatures: false,
     tabList: true,
-    selectedTab: 'home',
+    tabNames: ['home', 'about', 'contact']
   }),
 };
 </script>
