@@ -1,41 +1,53 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld />
+  <div>
     <br>
-    <h3><mark>$listeners</mark> example (check the console)</h3>
-    <ListenersExample @focus="showFocus"/>
+    <button @click="visible = true; showContainer = true">Show modal</button>
     <br>
-    <h3><mark>inheritAttrs</mark> example</h3>
-    <InheritAttrs rows="50" :divStyle="square"/>  
-  </div>
+    <Modal v-if="visible" :showContainer="showContainer">
+      <template v-slot:header>
+        <h3>Custom header</h3>
+      </template>
+
+      <template v-slot:content>
+        <h3>Custom Content</h3>
+      </template>
+
+      <template v-slot:footer>
+        <h3>Custom footer</h3>
+      </template>
+    </Modal>
+  </div>  
 </template>
 
 <script>
-import HelloWorld from '@/components/HelloWorld.vue';
-import ListenersExample from '@/components/ListenersExample';
-import InheritAttrs from '@/components/InheritAttrs';
+import Modal from './Modal';
 
 export default {
   name: 'home',
+  
   components: {
-    HelloWorld,
-    ListenersExample,
-    InheritAttrs,
+    Modal,
   },
+
   data: () => ({
-    square: {
-        border: '1px solid black',
-        width: "30px",
-        height: "30px",
-    }
+    visible: false,
+    showContainer: true
   }),
+
   methods: {
-    showFocus() {
-      console.log('input focused!');
+    checkClickedOutside (ev) {
+      if (ev.target !== ev.currentTarget)
+        return;
+
+      this.closeModal();
     },
-  },
-  computed: {
+    closeModal () {
+      setTimeout(() => {
+          this.visible = false
+        }, 500);
+
+      this.showContainer = false
+    }
   }
 };
 </script>
