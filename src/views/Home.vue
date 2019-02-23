@@ -2,9 +2,9 @@
   <div class="home">
     <img alt="Vue logo" src="../assets/logo.png">
     <!-- <ScopedSlots /> -->
-    <!-- <VModel /> -->
+    <VModel />
     <!-- <RenderlessComponents /> -->
-    <ComponentRegistration />
+    <!-- <ComponentRegistration /> -->
   </div>
 </template>
 

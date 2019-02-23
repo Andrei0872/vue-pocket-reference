@@ -11,16 +11,22 @@
     <br>
     <content-editable v-model="editable"></content-editable>
     <p>{{ editable || 'empty' | clear }}</p>
-    <br>  
+    <br>
     <radio-and-checkbox></radio-and-checkbox>
+    <br>
+    <h3>Select Component</h3>
+    <p>Selected Country: {{ selectedCountry }}</p>
+    <BaseSelect label="Select Country!" :data="countries" />
   </div>
 </template>
 
 <script>
-import BasicInput from './components/BasicInput'
-import Customized from './components/Customized'
-import ContentEditable from './components/ContentEditable'
-import radioAndCheckbox from './components/radioAndCheckbox'
+// Check App.vue to select other examples.
+import BasicInput from './components/BasicInput';
+import Customized from './components/Customized';
+import ContentEditable from './components/ContentEditable';
+import radioAndCheckbox from './components/radioAndCheckbox';
+import BaseSelect from './components/BaseSelect';
 
 
 export default {
@@ -30,23 +36,40 @@ export default {
     Customized,
     ContentEditable,
     radioAndCheckbox,
+    BaseSelect,
   },
   data() {
     return {
       name: '',
       customizedInfo: {
         email: '',
-        age: ''
+        age: '',
       },
       editable: '',
-    }
+      countries: [
+        { id: 1, name: 'Romania' },
+        { id: 2, name: 'Italy' },
+        { id: 3, name: 'France' },
+        { id: 4, name: 'Germany' },
+      ],
+      selectedCountry: '',
+
+    };
   },
   filters: {
-        'clear' (value) {
-            return value.trim().replace('Content editable', '')
-        }
-    }
-}
+    clear(value) {
+      return value.trim().replace('Content editable', '');
+    },
+  },
+  methods: {
+    changeSelectedCountry(e) {
+      this.selectedCountry = e.target.selectedOptions[0].text;
+    },
+  },
+  created() {
+    this.selectedCountry = this.countries[0].name;
+  },
+};
 </script>
 
 <style>
