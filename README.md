@@ -23,6 +23,7 @@ For a better learning experience, at least this goes for myself, I decided to sp
 * [Internationalization](https://github.com/Andrei0872/vue-pocket-reference/tree/i18n)
 * [Functional Components](https://github.com/Andrei0872/vue-pocket-reference/tree/functional-components)
 * [Abstract Components](https://github.com/Andrei0872/vue-pocket-reference/tree/abstract-components)
+    *[Show content based on user permission](https://github.com/Andrei0872/vue-pocket-reference/tree/abstract-components/src/components)
 * [Slots - 2.6 release](https://github.com/Andrei0872/vue-pocket-reference/tree/2.6-features)
 * [Customizable Tab Component](https://github.com/Andrei0872/vue-pocket-reference/tree/2.6-features)
 * [Modal using CSS BEM and 2.6 new slots syntax](https://github.com/Andrei0872/vue-pocket-reference/tree/examples/src/views)
